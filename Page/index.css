@@ -1,10 +1,16 @@
+body{
+    font-family: 'Lato', sans-serif;
+}
+
 #footer{
     background-color: white;
     color: #BAFFDF;
 }
+
 #nav{
     background-color: #7C7287;
 }
+
 #footer{
     background-color: #7C7287;
 }
@@ -15,4 +21,8 @@
 
 .nav-link{
     color: #BAFFDF !important;
+}
+
+h2{
+    color: #BAFFDF;
 }
