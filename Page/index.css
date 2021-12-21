@@ -1,5 +1,6 @@
 body{
     font-family: 'Lato', sans-serif;
+    scroll-behavior: smooth !important;
 }
 
 #footer{
@@ -25,4 +26,14 @@ body{
 
 h2{
     color: #BAFFDF;
+    font-weight: bold;
 }
+
+.container{
+   margin-top: 4%; 
+}
+
+#carousel{
+    margin-top: 1%;
+}
+

@@ -21,7 +21,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 <!--Navbar-->
-<nav class="navbar navbar-expand-lg navbar-dark primary-color" id="nav">
+<nav class="navbar navbar-expand-lg fixed-top navbar-dark" id="nav">
     <!-- Navbar brand -->
     <a class="navbar-brand" href="#">Luca's Recipes</a>
     <!-- Collapse button -->
@@ -78,48 +78,83 @@
   </nav>
   <!--/.Navbar-->
     
+  <!--Title-->
+  <div class="container">
+      <div class="row">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-8">
+            <h1>New York Cheesecake</h1>
+        </div>
+    </div> 
+  </div>
+  <!--/.Title-->
+
   <!--Karusell-->
-  <div class="col-lg-8">
-    <div id="carouselExampleCaptions" class="carousel carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  <div class="row" id="carousel">
+
+  <div class="col-lg-2"></div>
+
+  <!--Carousel Wrapper-->
+<div id="carousel-example-2" class="col-lg-8 carousel slide carousel-fade" data-ride="carousel">
+    <!--Indicators-->
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-example-2" data-slide-to="1"></li>
+      <li data-target="#carousel-example-2" data-slide-to="2"></li>
+    </ol>
+    <!--/.Indicators-->
+    <!--Slides-->
+    <div class="carousel-inner" role="listbox">
+      <div class="carousel-item active">
+        <div class="view">
+          <img class="d-block w-100" src="img/Ingredient.jpg"
+            alt="First slide">
+          <div class="mask rgba-black-strong"></div>
         </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <a href="../Product page/product.html"><img src="img/airpods.png" class="d-block w-100 h-100" alt="Airpods Max product picture"></a>
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Airpods Max</h5>
-              <p>Get the newest innovation from Apple</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <a href="../Product page/product.html"><img src="img/finalmouse.jpg" class="d-block w-100 h-100" alt="Finalmouse product picture"></a>
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Finalmouse</h5>
-              <p>Only the best product quality</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <a href="../Product page/product.html"><img src="img/monitor.jpg" class="d-block w-100 h-100" alt="Monitor product picture"></a>
-            <div class="carousel-caption d-none d-md-block">
-              <h5>ASUS ROG Swift PG279QM</h5>
-              <p>The finest quality combined with 4k</p>
-            </div>
-          </div>
+        <div class="carousel-caption">
+          <h3 class="h3-responsive">Ingredients</h3>
+          <p>These are all the Ingredients you need</p>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+      </div>
+      <div class="carousel-item">
+        <!--Mask color-->
+        <div class="view">
+          <img class="d-block w-100" src="img/Crust.jpg"
+            alt="Only the Crust of the Cheesecake">
+          <div class="mask rgba-black-strong"></div>
+        </div>
+        <div class="carousel-caption">
+          <h3 class="h3-responsive">First step done</h3>
+          <p>First part of the cake done</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <!--Mask color-->
+        <div class="view">
+          <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(9).webp"
+            alt="Third slide">
+          <div class="mask rgba-black-strong"></div>
+        </div>
+        <div class="carousel-caption">
+          <h3 class="h3-responsive">Slight mask</h3>
+          <p>Third text</p>
+        </div>
       </div>
     </div>
-    </div> 
+    <!--/.Slides-->
+    <!--Controls-->
+    <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+    <!--/.Controls-->
+  </div>
+  <!--/.Carousel Wrapper-->
+    <br>
   <!--/.Karusell-->
 
   <!--Text-->
@@ -154,8 +189,51 @@
           </div>
           <div class="col">
             <h3>Step 1</h3>
-            <p>Position an oven shelf in the middle of the oven. Heat the oven to 180C/ 160C fan/ gas 4.</p>
-            <h2></h2>
+            <p>Position an oven shelf in the middle of the oven. Heat the oven to 180C/ 160C fan/ gas 4. <br></p>
+            <h3>Step 2</h3>
+            <p>Line the base of a 23cm springform cake tin by putting a square piece of parchment 
+               paper or foil on top of the tin base and then clipping the side on so the paper or 
+               foil is trapped and any excess sticks out of the bottom. <br></p>
+            <h3>Step 3</h3>
+            <p>For the crust, melt 85g butter in a medium pan. Stir in 140g digestive biscuit crumbs
+               and 1 tbsp golden caster or granulated sugar so the mixture is evenly moistened. <br></p>
+            <h3>Step 4</h3>
+            <p>Press the mixture into the bottom of the pan and bake for 10 minutes. Cool on a wire rack while preparing the filling. <br></p>
+            <img src="img/Crust.jpg" alt="" width="100%">
+            <h3>Step 5</h3>
+            <p>For the filling, increase the oven temperature to fan 220C/ 200C fan/ gas 7. In a
+               table top mixer fitted with the paddle attachment, beat 900g full-fat soft cheese
+               at medium-low speed until creamy, about 2 minutes. <br></p>
+            <h3>Step 6</h3>
+            <p>With the mixer on low, gradually add 250g golden caster sugar, then 3 tbsp plain flour
+               and a pinch of salt, scraping down the sides of the bowl and the paddle twice. <br></p>
+            <h3>Step 7</h3>
+            <p>Swap the paddle attachment for the whisk. Continue by adding 1½ tsp vanilla extract,
+               2 tsp lemon zest and 1½ tsp lemon juice. Whisk in 3 large eggs and 1 yolk, one at
+               a time, scraping the bowl and whisk at least twice. <br></p>
+            <h3>Step 8</h3>
+            <p>Stir a 284ml carton of soured cream until smooth, then measure 200ml (just over ¾ of the carton).
+               Continue on low speed as you add the measured soured cream (reserve the rest). 
+               Whisk to blend, but don't over-beat. The batter should be smooth, light and somewhat airy. <br></p>
+            <h3>Step 9</h3>
+            <p>Brush the sides of the springform tin with melted butter and put on a baking sheet. 
+               Pour in the filling - if there are any lumps, sink them using a knife - the top 
+               should be as smooth as possible. Bake for 10 minutes. <br></p>
+            <h3>Step 10</h3>
+            <p>Reduce oven temperature to 110C/ 90C fan/ gas ¼ and bake for 45 minutes more. 
+                If you gently shake the tin, the filling should have a slight wobble. <br></p>
+            <h3>Step 11</h3>
+            <p>Turn off the oven and open the oven door for a cheesecake that's creamy in the centre, 
+               or leave it closed if you prefer a drier texture. Let cool in the oven for 2 hours. 
+               The cheesecake may get a slight crack on top as it cools. <br></p>
+            <h3>Step 12</h3>
+            <p>Combine the reserved soured cream with a 142ml carton soured cream, 1 tbsp golden 
+               caster sugar and 2 tsp lemon juice for the topping. Spread over the cheesecake right to the edges. 
+               Cover loosely with foil and refrigerate for at least 8 hours or overnight. <br></p>
+            <h3>Step 13</h3>
+            <p>Run a round-bladed knife around the sides of the tin to loosen any stuck edges. 
+                Unlock the side, slide the cheesecake off the bottom of the tin onto a plate, 
+                then slide the parchment paper out from underneath. <br></p>
           </div>
       </div>
    
@@ -164,6 +242,7 @@
   <!--/.Text-->
 
     <!-- Footer -->
+    <div class="container-fluid">
 <footer class="page-footer font-small pt-4" id="footer">
 
     <!-- Footer Links -->
@@ -176,7 +255,7 @@
         <div class="col-md-6 mt-md-0 mt-3">
   
           <!-- Content -->
-          <h5 class="text-uppercase">Footer Content</h5>
+          <h5 class="text-uppercase">Imprint</h5>
           <p>Here you can use rows and columns to organize your footer content.</p>
   
         </div>
@@ -245,6 +324,7 @@
     <!-- Copyright -->
   
   </footer>
+</div>
   <!-- Footer -->
   </body>
 </html>
