@@ -21,7 +21,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 <!--Navbar-->
-<nav class="navbar navbar-expand-lg fixed-top navbar-dark" id="nav">
+<nav class="navbar navbar-expand-lg navbar-dark" id="nav">
     <!-- Navbar brand -->
     <a class="navbar-brand" href="#">Luca's Recipes</a>
     <!-- Collapse button -->
@@ -39,41 +39,25 @@
           </a>
         </li>
         <!-- Dropdown -->
-        <li class="nav-item dropdown multi-level-dropdown">
-          <a href="#" id="menu" data-toggle="dropdown" class="nav-link dropdown-toggle w-100">Dropdown</a>
-          <ul class="dropdown-menu mt-2 rounded-0 primary-color border-0 z-depth-1">
-            <li class="dropdown-item dropdown-submenu p-0">
-              <a href="#" data-toggle="dropdown" class="dropdown-toggle text-black w-100">Click Me Too! </a>
-              <ul class="dropdown-menu ml-2 rounded-0 primary-color border-0 z-depth-1">
-                <li class="dropdown-item p-0">
-                  <a href="#" class="text-white w-100">Hey</a>
-                </li>
-                <li class="dropdown-item p-0">
-                  <a href="#" class="text-white w-100">Hi</a>
-                </li>
-                <li class="dropdown-item dropdown-submenu p-0">
-                  <a href="#" data-toggle="dropdown" class="dropdown-toggle text-white w-100">Hello </a>
-                  <ul class="dropdown-menu mr-2 rounded-0 primary-color border-0 z-depth-1 r-100 ">
-                    <li class="dropdown-item p-0">
-                      <a href="#" class="text-white w-100">Some</a>
-                    </li>
-                    <li class="dropdown-item p-0">
-                      <a href="#" class="text-white w-100">Text</a>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-      </ul>
-      <!-- Links -->
-      <form class="form-inline">
-        <div class="md-form my-0">
-          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-        </div>
-      </form>
-    </div>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">Process</a>
+            <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#Step1">Step 1</a>
+              <a class="dropdown-item" href="#Step2">Step 2</a>
+              <a class="dropdown-item" href="#Step3">Step 3</a>
+              <a class="dropdown-item" href="#Step4">Step 4</a>
+              <a class="dropdown-item" href="#Step5">Step 5</a>
+              <a class="dropdown-item" href="#Step6">Step 6</a>
+              <a class="dropdown-item" href="#Step7">Step 7</a>
+              <a class="dropdown-item" href="#Step8">Step 8</a>
+              <a class="dropdown-item" href="#Step9">Step 9</a>
+              <a class="dropdown-item" href="#Step10">Step 10</a>
+              <a class="dropdown-item" href="#Step11">Step 11</a>
+              <a class="dropdown-item" href="#Step12">Step 12</a>
+              <a class="dropdown-item" href="#Step13">Step 13</a>
+            </div>
+          </li>
     <!-- Collapsible content -->
   </nav>
   <!--/.Navbar-->
@@ -131,13 +115,13 @@
       <div class="carousel-item">
         <!--Mask color-->
         <div class="view">
-          <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(9).webp"
-            alt="Third slide">
+          <img class="d-block w-100" src="img/FinishedCakeSide.jpg"
+            alt="finished cheesecake">
           <div class="mask rgba-black-strong"></div>
         </div>
         <div class="carousel-caption">
-          <h3 class="h3-responsive">Slight mask</h3>
-          <p>Third text</p>
+          <h3 class="h3-responsive">Finished Cheesecake</h3>
+          <p>The final product</p>
         </div>
       </div>
     </div>
@@ -188,52 +172,58 @@
                 2 tsp lemon juice <br></p>
           </div>
           <div class="col">
-            <h3>Step 1</h3>
+              <a id="Step1"><h3>Step 1</h3></a>
             <p>Position an oven shelf in the middle of the oven. Heat the oven to 180C/ 160C fan/ gas 4. <br></p>
-            <h3>Step 2</h3>
+            <a id="Step2"><h3>Step 2</h3></a>
             <p>Line the base of a 23cm springform cake tin by putting a square piece of parchment 
                paper or foil on top of the tin base and then clipping the side on so the paper or 
                foil is trapped and any excess sticks out of the bottom. <br></p>
-            <h3>Step 3</h3>
+            <a id="Step3"><h3>Step 3</h3></a>
             <p>For the crust, melt 85g butter in a medium pan. Stir in 140g digestive biscuit crumbs
                and 1 tbsp golden caster or granulated sugar so the mixture is evenly moistened. <br></p>
-            <h3>Step 4</h3>
+            <a id="Step4"><h3>Step 4</h3></a>
             <p>Press the mixture into the bottom of the pan and bake for 10 minutes. Cool on a wire rack while preparing the filling. <br></p>
-            <img src="img/Crust.jpg" alt="" width="100%">
-            <h3>Step 5</h3>
+            <img src="img/Crust.jpg" alt="Only the crust of the cake" width="100%" id="cakeprocfoto">
+            <a id="Step5"><h3>Step 5</h3></a>
             <p>For the filling, increase the oven temperature to fan 220C/ 200C fan/ gas 7. In a
                table top mixer fitted with the paddle attachment, beat 900g full-fat soft cheese
                at medium-low speed until creamy, about 2 minutes. <br></p>
-            <h3>Step 6</h3>
+            <a id="Step6"><h3>Step 6</h3></a>
             <p>With the mixer on low, gradually add 250g golden caster sugar, then 3 tbsp plain flour
                and a pinch of salt, scraping down the sides of the bowl and the paddle twice. <br></p>
-            <h3>Step 7</h3>
+            <img src="img/SugerInMixture.jpg" alt="Suger in Mixture" width="100%" id="cakeprocfoto">
+            <a id="Step7"><h3>Step 7</h3></a>
             <p>Swap the paddle attachment for the whisk. Continue by adding 1½ tsp vanilla extract,
                2 tsp lemon zest and 1½ tsp lemon juice. Whisk in 3 large eggs and 1 yolk, one at
                a time, scraping the bowl and whisk at least twice. <br></p>
-            <h3>Step 8</h3>
+            <img src="img/EggInMixture.jpg" alt="Egg in Mixture" width="100%" id="cakeprocfoto">
+            <a id="Step8"><h3>Step 8</h3></a>
             <p>Stir a 284ml carton of soured cream until smooth, then measure 200ml (just over ¾ of the carton).
                Continue on low speed as you add the measured soured cream (reserve the rest). 
                Whisk to blend, but don't over-beat. The batter should be smooth, light and somewhat airy. <br></p>
-            <h3>Step 9</h3>
+            <a id="Step9"><h3>Step 9</h3></a>
             <p>Brush the sides of the springform tin with melted butter and put on a baking sheet. 
                Pour in the filling - if there are any lumps, sink them using a knife - the top 
                should be as smooth as possible. Bake for 10 minutes. <br></p>
-            <h3>Step 10</h3>
+            <img src="img/CakeBeforeBaking.jpg" alt="Cake before Baking" width="100%" id="cakeprocfoto">
+            <a id="Step10"><h3>Step 10</h3></a>
             <p>Reduce oven temperature to 110C/ 90C fan/ gas ¼ and bake for 45 minutes more. 
                 If you gently shake the tin, the filling should have a slight wobble. <br></p>
-            <h3>Step 11</h3>
+            <img src="img/CakeAfter45min.jpg" alt="Cake after the 45min" width="100%" id="cakeprocfoto">
+            <a id="Step11"><h3>Step 11</h3></a>
             <p>Turn off the oven and open the oven door for a cheesecake that's creamy in the centre, 
                or leave it closed if you prefer a drier texture. Let cool in the oven for 2 hours. 
                The cheesecake may get a slight crack on top as it cools. <br></p>
-            <h3>Step 12</h3>
+            <a id="Step12"><h3>Step 12</h3></a>
             <p>Combine the reserved soured cream with a 142ml carton soured cream, 1 tbsp golden 
                caster sugar and 2 tsp lemon juice for the topping. Spread over the cheesecake right to the edges. 
                Cover loosely with foil and refrigerate for at least 8 hours or overnight. <br></p>
-            <h3>Step 13</h3>
+            <img src="img/CakeInFridge.jpg" alt="Cake in the Fridge" width="100%" id="cakeprocfoto">
+            <a id="Step13"><h3>Step 13</h3></a>
             <p>Run a round-bladed knife around the sides of the tin to loosen any stuck edges. 
                 Unlock the side, slide the cheesecake off the bottom of the tin onto a plate, 
                 then slide the parchment paper out from underneath. <br></p>
+            <img src="img/FinishedCakeTop.jpg" alt="Cake from the top" width="100%" id="cakeprocfoto">
           </div>
       </div>
    
@@ -256,7 +246,10 @@
   
           <!-- Content -->
           <h5 class="text-uppercase">Imprint</h5>
-          <p>Here you can use rows and columns to organize your footer content.</p>
+          <p>Name: Luca <br>
+             Adress: Cooking Street 6 <br>
+             E-mail: LucasRecipes@chef.cook
+            </p>
   
         </div>
         <!-- Grid column -->
@@ -267,49 +260,15 @@
         <div class="col-md-3 mb-md-0 mb-3">
   
           <!-- Links -->
-          <h5 class="text-uppercase">Links</h5>
-  
-          <ul class="list-unstyled">
-            <li>
-              <a href="#!">Link 1</a>
-            </li>
-            <li>
-              <a href="#!">Link 2</a>
-            </li>
-            <li>
-              <a href="#!">Link 3</a>
-            </li>
-            <li>
-              <a href="#!">Link 4</a>
-            </li>
-          </ul>
-  
+          <h5 class="text-uppercase">About</h5>
+        
+        <p>This is a very good New York cheesecake recipe. The Cheesecake is very sweet and rich in flavor. You will crave more cheesecake after eating this one.</p>
+
         </div>
+
         <!-- Grid column -->
   
-        <!-- Grid column -->
-        <div class="col-md-3 mb-md-0 mb-3">
-  
-          <!-- Links -->
-          <h5 class="text-uppercase">Links</h5>
-  
-          <ul class="list-unstyled">
-            <li>
-              <a href="#!">Link 1</a>
-            </li>
-            <li>
-              <a href="#!">Link 2</a>
-            </li>
-            <li>
-              <a href="#!">Link 3</a>
-            </li>
-            <li>
-              <a href="#!">Link 4</a>
-            </li>
-          </ul>
-  
-        </div>
-        <!-- Grid column -->
+        
   
       </div>
       <!-- Grid row -->
